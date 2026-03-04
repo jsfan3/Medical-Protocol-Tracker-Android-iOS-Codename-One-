@@ -1,0 +1,163 @@
+/* ---------- Costanti di tema ---------- */
+#Constants {
+    includeNativeBool: true;
+    defaultSourceDPIInt: "0";
+    scrollVisibleBool: false;
+}
+
+/* ---------- Palette ---------- */
+:root {
+	--title:             blue;
+    --bg-row:            white;
+    --bg-row-complete:   gray;
+    --text:              black;
+    --text-desc:         gray;
+    --text-footer:       gray;
+    --accent:            #007AFF;
+    --update-icon:       black;
+}
+
+/* ---------- Tipografia globale ---------- */
+
+Button {
+    font-family: "native:MainLight";
+    font-size: 3mm;
+}
+
+Title {
+    font-family: "native:MainLight";
+    font-size: 4.2mm;
+    font-weight: bold;
+    text-align: center;
+    color: var(--title);
+}
+
+DialogBody {
+    font-family: "native:MainLight";
+    font-size: 2.8mm;
+}
+
+DialogTitle {
+    font-family: "native:MainLight";
+    font-size: 4.5mm;
+}
+
+/* ---------- Toolbar & titolo ---------- */
+Toolbar {
+    padding: 0.6mm 1mm;
+	background: white;
+	border: none;
+}
+
+TitleArea {
+    padding: 0;
+    margin: 0;
+}
+
+TitleCommandContainer {
+    padding: 0 0.5mm;
+    margin: 0;
+}
+
+/* ---------- Side menu ---------- */
+SideNavigationPanel {
+    background: #ffffff;
+    padding: 2mm 1mm 1mm 1mm;
+}
+
+SideCommand {
+    padding: 1mm;
+    border: none;
+    text-decoration: none;
+    color: #000000;
+    font-family: "native:MainLight";
+    font-size: 4mm;
+    border-bottom: 2px solid #cccccc;
+}
+
+/* ---------- UIID personalizzate ---------- */
+
+Label, SpanLabel, TextArea {
+	color: var(--text);
+	padding: 0mm;
+}
+
+ContentPane {
+	background: white;
+	border: none;
+}
+
+CheckListCnt {
+	margin: 0mm;
+	padding: 0mm;
+}
+
+ChecklistCB {
+	margin: 0mm;
+	padding: 0mm;
+    margin-right: 3mm;
+    color: var(--accent);
+}
+
+ItemLabel {
+    color: var(--text);
+    font-size: 3.2mm;
+	margin: 0mm;
+	margin-top: 1mm;
+	padding: 0mm;
+}
+
+Description {
+    color: var(--text-desc);
+    font-size: 3.2mm;
+    padding: 0 5mm;
+	margin-bottom: 2mm;
+}
+
+Row {
+    color: var(--text);
+    background: lightgreen;
+    border-bottom: 1pt solid #000000;
+    padding-left: 5mm;
+	padding-right: 5mm;
+	padding-top: 2mm;
+	padding-bottom: 2mm;
+	margin: 0mm;
+}
+
+FirstRow {
+	cn1-derive: Row;
+	border-top: 1pt solid #000000;
+}
+
+RowCompleted {
+    cn1-derive: Row;
+    background: var(--bg-row);
+    opacity: 0.5;
+}
+
+Footer {
+    color: var(--text-footer);
+    font-size: 3mm;
+    margin-top: 3mm;
+    padding: 0 5mm;
+}
+
+UpdateIcon {
+    color: var(--update-icon);
+}
+
+/* ---------- Override iOS ---------- */
+@media platform-ios {
+    SideNavigationPanel {
+        padding: 6mm 1mm 1mm 1mm;
+    }
+    Toolbar {
+        padding-top: 5mm;
+    }
+}
+
+/* ---------- Display ultra-densi ---------- */
+@media display-density-xxhigh, display-density-xhigh {
+    Title { font-size: 3.8mm; }
+}

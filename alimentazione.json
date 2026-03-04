@@ -1,0 +1,37 @@
+{
+  "title": "Example Protocol",
+  "description": "Generic demo for a customizable medical protocol. Replace the items below with your own plan agreed with your clinician.",
+  "items": [
+    {
+      "id": 1,
+      "item": "Morning medication",
+      "times": 1
+    },
+    {
+      "id": 2,
+      "item": "Check blood pressure",
+      "times": 2
+    },
+    {
+      "id": 3,
+      "item": "Drink water (250 ml)",
+      "times": 8
+    },
+    {
+      "id": 4,
+      "item": "Short walk / light activity",
+      "times": 1
+    },
+    {
+      "id": 5,
+      "item": "Record symptoms or notes",
+      "times": 1
+    },
+    {
+      "id": 6,
+      "item": "Evening medication",
+      "times": 1
+    }
+  ],
+  "footer": "Demo data only. This app is a tracker template, not medical advice."
+}
