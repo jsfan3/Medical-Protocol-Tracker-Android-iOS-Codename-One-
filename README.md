@@ -6,7 +6,10 @@ The app downloads the JSON when it starts, stores it locally, and shows each pro
 
 ## Example of use for a diet program
 
-
+<img
+  src="./Codename%20One%20-%20Example%20of%20diet%20%28medical%20tracker%29.png"
+  alt="Codename One - Example of diet (medical tracker)"
+  height="600" />
 
 ## Why this project exists
 
