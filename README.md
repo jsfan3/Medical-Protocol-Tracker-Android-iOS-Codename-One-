@@ -4,6 +4,10 @@ A small **Codename One** app to track a **customizable medical/wellness protocol
 
 The app downloads the JSON when it starts, stores it locally, and shows each protocol item with a configurable number of checkboxes (`times`) to mark repetitions during the day.
 
+## Example of use for a diet program
+
+
+
 ## Why this project exists
 
 This was originally built for personal use and then minimally cleaned up so it can be shared publicly and reused as a template.
